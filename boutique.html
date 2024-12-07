@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liberty City RP</title>
+    <link rel="stylesheet" href="./styles/regle.css">
+    <link rel="shortcut icon" href="./image/logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> <!-- Icônes -->
+</head>
+<body>
+    <header>
+        <div class="glass-navbar">
+            <div class="logo">
+                <img src="./image/logo.jpg" alt="Logo" class="logo-icon">
+                <span class="logo-text">Liberty City RP</span>
+            </div>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="regle.html">Règles</a></li>
+                    <li><a href="texture.html">Texture du serveur</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="team.html">Notre équipe</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="https://discord.gg/57v8cZf" class="icon-link"><i class="fab fa-discord"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-moon"></i></a>
+            </div>
+            <div class="burger-menu"><i class="fas fa-bars"></i></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="shop-section">
+            <h2>Nos Produits</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="image/vip.jpg" alt="Produit 1">
+                    <h3>VIP</h3>
+                    <p>Description courte du produit 1.</p>
+                    <p>Prix: 10€</p>
+                    <!-- Lien vers PayPal pour le produit 1 -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your_paypal_email@example.com">
+                        <input type="hidden" name="item_name" value="Produit 1">
+                        <input type="hidden" name="amount" value="10">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <button type="submit">Acheter</button>
+                    </form>
+                </div>
+                <div class="product-card">
+                    <img src="image/premium.jpg" alt="Produit 2">
+                    <h3>Premium</h3>
+                    <p>Description courte du produit 2.</p>
+                    <p>Prix: 20€</p>
+                    <!-- Lien vers PayPal pour le produit 2 -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your_paypal_email@example.com">
+                        <input type="hidden" name="item_name" value="Produit 2">
+                        <input type="hidden" name="amount" value="20">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <button type="submit">Acheter</button>
+                    </form>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image3.jpg" alt="Produit 3">
+                    <h3>Produit 3</h3>
+                    <p>Description courte du produit 3.</p>
+                    <p>Prix: 30€</p>
+                    <!-- Lien vers PayPal pour le produit 3 -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your_paypal_email@example.com">
+                        <input type="hidden" name="item_name" value="Produit 3">
+                        <input type="hidden" name="amount" value="30">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <button type="submit">Acheter</button>
+                    </form>
+                </div>
+                <div class="product-card">
+                    <img src="path/to/image4.jpg" alt="Produit 4">
+                    <h3>Produit 4</h3>
+                    <p>Description courte du produit 4.</p>
+                    <p>Prix: 40€</p>
+                    <!-- Lien vers PayPal pour le produit 4 -->
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+                        <input type="hidden" name="cmd" value="_xclick">
+                        <input type="hidden" name="business" value="your_paypal_email@example.com">
+                        <input type="hidden" name="item_name" value="Produit 4">
+                        <input type="hidden" name="amount" value="40">
+                        <input type="hidden" name="currency_code" value="EUR">
+                        <button type="submit">Acheter</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <center>
+        <p>© 2023-2024 Liberty City RP. Tous droits réservés.</p></center>
+    </footer>
+    <script>
+        const burgerMenu = document.querySelector('.burger-menu');
+        const navbar = document.querySelector('.navbar');
+
+        burgerMenu.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
